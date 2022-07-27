@@ -17,7 +17,8 @@ class Battlefield:
 
     def battle_phase(self):
         while self.robot.health > 0 and self.dinosaur.health > 0:
-            print(self.battle_phase)
+            self.robot.attack(self.dinosaur)
+            self.dinosaur.attack(self.robot)
             if self.robot.attack:
                 print("Mr. Roboto has made the first attack")
             if self.robot.health <= 0 and self.dinosaur.health <= 0:
