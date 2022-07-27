@@ -4,13 +4,13 @@ from dinosaur import Dinosaur
 
 class Battlefield:
     def __init__(self):
-        self.robot = Robot("Mr. Roboto")
-        self.dinosaur = Dinosaur("Tiny T-Rex")
+        self.robot = Robot(input("Name your robot: "))
+        self.dinosaur = Dinosaur(input("Name your dinosaur: "))
 
     def run_game(self):
         self.display_welcome()
         self.battle_phase()
-        # self.display_winner()
+        self.display_winner()
 
     def display_welcome(self):
         print("Welcome to the battlefield. Prepare to fight to the death!")

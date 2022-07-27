@@ -9,21 +9,10 @@ from battlefield import Battlefield
 # dinosaur = Dinosaur(100, 40)
 # print(dinosaur.health, dinosaur.attack_power)
 
-
-
-
 # player_one = Robot()
 # player_two = Dinosaur()
 
 battle = Battlefield()
-
-
-
-
-
-
-
-
 
 
 
