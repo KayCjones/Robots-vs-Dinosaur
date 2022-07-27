@@ -18,14 +18,14 @@ class Battlefield:
     def battle_phase(self):
         while self.robot.health > 0 and self.dinosaur.health > 0:
             self.robot.attack(self.dinosaur)
-            self.dinosaur.attack(self.robot)
             if self.robot.attack:
-                print("Mr. Roboto has made the first attack")
-            if self.robot.health <= 0 and self.dinosaur.health <= 0:
-                print("Game over.")
-        # while both fighters have health greater than 0
-        self.robot and self.dinosaurs
-        
-         # display a winner once self.robot or self.dinosaur health reaches 0
+                print(f"{self.robot.name} has attacked {self.dinosaur.name}")
+            self.dinosaur.attack(self.robot)    
+            if self.dinosaur.attack:
+                print(f"{self.dinosaur.name} has attacked {self.robot.name}")
+            
     def display_winner(self):
-       pass
+        if self.robot.health > 0:
+            print(f"{self.robot.name} wins!")
+        else:
+            print(f"{self.dinosaur.name} wins!")

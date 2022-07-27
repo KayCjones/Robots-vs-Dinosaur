@@ -17,8 +17,6 @@ battle = Battlefield()
 
 
 
-
-
 battle.run_game()
 
 # print()
